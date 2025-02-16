@@ -1,4 +1,4 @@
-# te
+
 # Deploying Google Cloud Storage Bucket with Workload Identity Federation (WIF)
 
 This repository demonstrates how to deploy a Google Cloud Storage bucket using Terraform and GitHub Actions, leveraging Workload Identity Federation (WIF) for secure authentication.  This approach eliminates the need to store service account keys in your repository, enhancing security best practices.
