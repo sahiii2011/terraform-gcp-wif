@@ -11,7 +11,7 @@ resource "google_storage_bucket" "my_bucket1" {
   versioning {
     enabled = true
   }
-  lifecycle_rule {
+  lifecycle_rule {  # Corrected block
     condition {
       age_greater_than = 30 # Days
     }
