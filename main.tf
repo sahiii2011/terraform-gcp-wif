@@ -14,6 +14,7 @@ resource "google_storage_bucket" "my_bucket1" {
   lifecycle_rule {  # Corrected block
     condition {
       age_greater_than = 30 # Days
+          days = 30
     }
     action {
       type = "Delete"
