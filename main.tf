@@ -11,17 +11,7 @@ resource "google_storage_bucket" "my_bucket1" {
   versioning {
     enabled = true
   }
-  lifecycle_rule {  # Corrected block
-    condition {
-      age_greater_than = 30 # Days
-          days = 30
-    }
-    action {
-      type = "Delete"
-    }
-  }
-}
-
+  
 resource "random_id" "bucket_prefix" {
  byte_length = 8 # Generates a random hex string
 }
