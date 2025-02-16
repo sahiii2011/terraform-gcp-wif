@@ -26,7 +26,7 @@ jobs:
       - name: Configure GCP Credentials (Workload Identity Federation)
         uses: google-github-actions/auth@v1
         with:
-          workload_identity_provider: //iam.googleapis.com/projects/1029432129682/locations/global/workloadIdentityPools/github-demo/providers/github # CORRECTED - EXACTLY as in console
+          workload_identity_provider: projects/1029432129682/locations/global/workloadIdentityPools/github-demo/providers/github # CORRECTED - EXACTLY as in console
           service_account: github-wif@red-abstraction-446113-u1.iam.gserviceaccount.com
 
       - name: Terraform Init
